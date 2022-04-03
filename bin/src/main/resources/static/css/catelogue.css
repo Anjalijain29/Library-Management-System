@@ -1,0 +1,441 @@
+* {
+	padding: 0;
+}
+
+:root {
+	--first-color: indianred;
+	--light-blue: #adc5d9;
+	--dark-blue: #1d4259;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+nav {
+	padding: 0px;
+}
+
+nav .container {
+	margin-bottom: 5px;
+}
+
+nav .container img {
+	margin-top: 3px;
+}
+
+.item {
+	color: white !important;
+}
+
+.tag {
+	font-family: "Merriweather", serif;
+	font-size: 3rem;
+	font-weight: bold;
+	color: var(--dark-blue);
+}
+
+#nav-list li a {
+	font-size: 18px;
+}
+
+.card {
+	transition: transform 0.2s ease;
+	box-shadow: 2px 4px 6px 2px rgba(22, 22, 26, 0.18);
+	margin-bottom: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding: 40 px 25px;
+	border: 0.5px solid #1d4259;
+	border-radius: 5px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* background-color: var(--light-blue); */
+}
+
+
+ /*ark*/
+.card-upper {
+	max-height: 70%;  
+}
+
+.card-view-btn-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 20%;
+}
+
+
+
+ /*ark*/
+
+.card-img-div {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	margin: 5% auto;
+	text-align: center;
+}
+
+.card-img {
+	width: 70%;
+	margin-top: 15px;
+}
+
+.btn {
+	/*margin-top: 25px;*/
+
+	      background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6a5ba0, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #675a99, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+    color: white;
+}
+
+.view-btn {
+	margin: auto;
+	 background: #2b5876;  /* fallback for old browsers */
+ 
+ 
+    color: white;
+} 
+.btn-success:hover {
+    color: #fff;
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-wrning:hover {
+    color: #fff;
+   background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.modal-footer .btn:hover{
+	   color: #2b5876;
+ 
+    background: white;
+    border: 1px solid #2b5876;
+}
+
+
+
+.card .view-btn:hover {
+	background-color: var(--light-blue);
+}
+
+.card:hover {
+	transform: scale(1.2);
+	z-index: 5;
+}
+
+.search-sort-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.search-sort-container button {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.search-sort-container select {
+	background-color: #eee;
+	box-shadow: 0 0 3px rgb(0 0 0 /50%);
+	border-radius: 8px;
+}
+
+
+.search-sort-container .search-books {
+	margin-left: 75px;
+}
+
+.search-sort-container .sort-books {
+	margin-right: 75px;
+}
+
+.search-sort-container form {
+	display: flex;
+	flex-direction: row;
+}
+
+.search-sort-container form input {
+	width: 200px;
+}
+
+.search-sort-container form button {
+	font-size: 20px;
+	background: linear-gradient(to left, #4e4376, #2b5876);
+	color: #fff;
+}
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+nav {
+	padding: 0px;
+}
+
+nav .container {
+	margin-bottom: 5px;
+}
+
+nav .container img {
+	margin-top: 3px;
+}
+
+.item {
+	color: white !important;
+}
+
+.tag {
+	font-family: 'Merriweather', serif;
+	font-size: 3rem;
+	font-weight: bold;
+	color: var(--dark-blue);
+}
+
+.nav-item{
+    margin: 0 8px;
+}
+
+#nav-list li a {
+	font-size: 18px;
+}
+
+.card {
+	transition: transform 0.2s ease;
+	box-shadow: 2px 4px 6px 2px rgba(22, 22, 26, 0.18);
+	margin-bottom: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding: 40 px 25px;
+	border: .5px solid #1d4259;
+	border-radius: 5px;
+	background-color: #fff;
+	background-color: var(--light-blue);
+}
+
+.card-img-div {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	margin: 5% auto;
+	text-align: center;
+}
+
+.card-img {
+	width: 70%;
+	margin-top: 15px;
+}
+
+.card .btn {
+	margin-top: 25px;
+	background-color: #2b5876;
+}
+
+.card .btn:hover {
+	background-color: var(--light-blue);
+}
+
+.card:hover {
+	transform: scale(1.2);
+	z-index: 5;
+} */
+
+/* view modal*/
+
+.modal-header .btn-close {
+	background-color: #fff;
+}
+
+.modal-dialog {
+	margin-top: 10vh;
+}
+.modal-header {
+	background: linear-gradient(to right, #4e4376, #2b5876);
+}
+.count {
+	width: 75px;
+	border: 2px solid #2b5876;
+	border-radius: 4px;
+	height: 38px;
+	margin-right: 15px;
+}
+.count:hover {
+}
+/* view modal*/
+
+/* Search bar */
+
+.hrz {
+	display: none;
+	width: -webkit-fill-available;
+}
+
+.sbar {
+	justify-content: space-between;
+	width: 88%;
+	margin: auto;
+}
+
+.mr {
+	margin-right: 10px;
+	/* border: 1px solid;
+        border-radius: 6px; */
+        border-radius: 8px;
+}
+
+select {
+    border-radius: 8px;
+}
+
+.pgntn{
+	display :flex;
+	flex-direction : row;
+}
+
+.sortbar {
+	/* width: auto;
+	border: 1px solid;
+	/* border-radius: 6px; */
+	background-color: rgba(0, 0, 0, 0.075);
+	width: auto;
+	color: #999;
+	/* background: linear-gradient(#fff, #eee); */
+	border-radius: 20px;
+	box-shadow: 0 0 3px rgb(0 0 0 / 50%);
+	transition: all 0.3s ease 0s;
+}
+
+.maincontainer {
+	width: 90%;
+	padding-left: 10%;
+}
+
+.srch {
+	border: solid 1px;
+	border-radius: 20px;
+	background: linear-gradient(#fff, #eee);
+	color: #999;
+	font-weight: 400;
+	height: 100%;
+}
+
+.srtrad {
+	flex-direction: column;
+	margin-right: 10px;
+}
+
+.space{
+	display: none;
+}
+
+.ml{
+	margin-left : 4px;
+}
+
+/* search bar */
+
+/*
+@media (max-width: 995px) {
+	.hrz {
+		display: block;
+	}
+
+	.search-books {
+		margin: 20px;
+	}
+
+	.sort-books h5,
+	.search-books h5 {
+		display: none;
+	}
+
+	.search-sort-container {
+		display: flex;
+		flex-direction: column;
+		width: fit-content;
+	}
+	.search-sort-container .search-books {
+		margin-left: 0;
+		width: fit-content;
+	}
+	.search-sort-container form {
+		display: flex;
+		flex-direction: row;
+		width: fit-content;
+	}
+}
+
+*/
+
+@media (max-width: 900px) {
+	.nav-Item {
+		margin: 0px !important;
+	}
+	.navItem {
+		padding-left: 0 !important;
+	}
+	#nav-list {
+		padding: 0 !important;
+	}
+}
+
+@media (max-width: 472px) {
+	#nav .container {
+		display: flex;
+		justify-content: center;
+	}
+	#search {
+		justify-content: center;
+		padding: 5px;
+	}
+	#nav ul li {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+@media (min-width: 900px) {
+	.nav-Item {
+		margin: 0px !important;
+	}
+	.navItem {
+		padding-left: 0 !important;
+	}
+	#nav-list {
+		padding: 0 !important;
+	}
+}
+
+@media (max-width: 995px) {
+	.pgntn{
+		flex-direction : column;
+	}
+	.space{
+		display : block;
+		height : 20px;
+	}
+	
+	.ml{
+		margin-left : 8px;
+	}
+	
+	.tttb{
+		margin: auto;
+	}
+	
+	
+}

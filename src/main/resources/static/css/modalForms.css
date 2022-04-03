@@ -1,0 +1,70 @@
+
+.modal-body{
+    padding-bottom: 0 !important;
+}
+.modal-header{
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
+.btn-close{
+    /* color: #fff;  */
+    opacity: 1;
+    background-color: white;
+}
+.btn{
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6a5ba0, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #675a99, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+    color: white !important;
+}
+.btn:hover{
+    color: #2b5876;
+ 
+    background: white;
+    border: 1px solid #2b5876;
+}
+
+.close{
+    /* color: #fff;  */
+    opacity: 1;
+    background-color: white !important;
+}
+
+.add-btn{
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6a5ba0, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #675a99, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+    color: white !important;
+}
+
+.add-btn:hover{
+	  color: #2b5876 !important;
+ 
+    background: white;
+    border: 1px solid #2b5876;
+}
+
+
+.modal-footer{
+    border-top: 0px !important;
+}
+
+.update{
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6a5ba0, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #675a99, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+    color: white !important;
+}
+.update:hover{
+    color: #2b5876;
+ 
+    background: white;
+    border: 1px solid #2b5876;
+}
+
+

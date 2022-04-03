@@ -1,0 +1,276 @@
+
+:root {
+	--first-color: indianred;
+	--light-blue: #adc5d9;
+	--dark-blue: #1d4259;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    /* overflow: hidden; */
+}
+
+.navbar {
+    background: #2b5876;
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+    background: linear-gradient(to left, #4e4376, #2b5876);
+}
+
+#title {
+    height: 60px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.logout a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.logout a:hover {
+    color: #324122
+}
+
+.logout span {
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    background-color: #f1f1f1;
+    background: #2b5876;
+}
+
+.sidebar-brand {
+    height: 80px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    font-size: 20px;
+    width: 100%;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 16px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar a i {
+    margin-right: 20px;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.logout-side {
+    display: none;
+}
+
+div.contentt {
+    width: 100%;
+    padding: 1px 16px;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.form-popup {
+    display: none;
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+    z-index: 9;
+}
+
+.blurred {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+
+
+
+.mid .lbl {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+.thd {
+    background: linear-gradient(to left, #4e4376, #2b5876);
+    color: #fff;
+}
+
+.sort form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sort form {
+    width: 50%;
+}
+
+.sort form select {
+    width: 25%;
+}
+
+.sort form button {
+    font-size: 20px;
+    background: linear-gradient(to left, #4e4376, #2b5876);
+    color: #fff;
+}
+.fa-sort{
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+
+
+.add-btn{
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6a5ba0, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #675a99, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+    color: white !important;
+}
+
+.add-btn:hover{
+	  color: #2b5876 !important;
+ 
+    background: white;
+    border: 1px solid #2b5876;
+}
+
+.close{
+    /* color: #fff;  */
+    opacity: 1;
+    background-color: white !important;
+}
+
+.highlight{
+	background-color: var(--light-blue) !important;
+}
+
+.generate{
+	width:150px;
+}
+
+
+
+/* @media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    .sidebar-brand {
+        display: none;
+    }
+} */
+
+
+
+@media screen and (min-width: 700px){
+.hover-text{
+  height: 50px;
+  word-wrap: break-word;
+  max-width: 5px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  word-break: break-all;
+  white-space: nowrap;
+
+  text-align: left;
+  padding: 10px;
+}
+
+.hover-text:hover {
+
+  overflow: visible;
+  white-space: normal;
+  height: auto;
+}
+}
+
+@media screen and (max-width: 1050px)
+{
+	.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #f1f1f1;
+    background: #2b5876;
+}
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: auto;
+    }
+    .logout {
+        display: none;
+    }
+    .logout-side {
+        display: block;
+    }
+    .sidebar a {
+        text-align: center;
+        display: block;
+        width: 100%;
+        float: none;
+    }
+    #nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    body {
+        overflow: auto;
+    }
+    
+}

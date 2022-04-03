@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    overflow: hidden;
+}
+
+.navbar {
+    background: #2b5876;
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+    background: linear-gradient(to left, #4e4376, #2b5876);
+}
+
+#title {
+    height: 60px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.logout a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.logout a:hover {
+    color: #324122
+}
+
+.logout span {
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    background-color: #f1f1f1;
+    background: #2b5876;
+    /* background: -webkit-linear-gradient(to right, #4e4376, #2b5876); */
+    /* background: linear-gradient(to right, #4e4376, #2b5876); */
+}
+
+.sidebar-brand {
+    height: 80px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    font-size: 20px;
+    width: 100%;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 16px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar a i {
+    margin-right: 20px;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.logout-side {
+    display: none;
+}
+
+div.content {
+    width: 100%;
+    padding: 1px 16px;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.content {
+    width: 500px;
+}
+.blurred {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.fa-sort{
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+
+
+.hide-text{
+	  white-space: nowrap; 
+  width: 100px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #000000;
+
+}
+
+.hide-text:hover {
+  overflow: visible;
+}
+
+/* @media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    .sidebar-brand {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: auto;
+    }
+    .logout {
+        display: none;
+    }
+    .logout-side {
+        display: block;
+    }
+    .sidebar a {
+        text-align: center;
+        display: block;
+        width: 100%;
+        float: none;
+    }
+    #nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

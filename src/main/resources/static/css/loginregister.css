@@ -1,0 +1,53 @@
+body{
+	
+	background: linear-gradient(to right, #4e4376, #2b5876);
+  	font-family: 'Muli', sans-serif;
+  
+}
+h1{
+  color: #fff;
+  font-weight: bold;
+}
+a{
+  color: #333;
+}
+a:hover{
+  color: #E8D426;
+  text-decoration: none;
+}
+.form-control:focus {
+
+    color: #000;
+    background-color: #fff;
+    /* border:2px solid #E8D426; */
+    outline: 0;
+    box-shadow: none;
+
+}
+
+
+.btn:hover {
+  background: #5981ee;
+  border: #E8D426;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    padding-bottom: 0;
+}
+
+.row {
+    margin-top: 5vh;
+    
+}
+
+.pt-3 {
+    padding-top: 0!important; 
+}
+
+
+.navbar {
+    border-bottom: 2px solid white;
+}

@@ -1,0 +1,258 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Poppins:wght@300;400&display=swap');
+:root {
+	--light-blue: #adc5d9;
+	--dark-blue: #1d4259;
+}
+
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+.first {
+	height: 700px !important;
+}
+
+#nav-list li a {
+	font-size: 18px;
+}
+
+.first-tag {
+	color: white;
+	font-size: 45px;
+	font-weight: bolder;
+}
+
+.second-tag {
+	color: #070707;
+	font-size: 36px;
+	font-weight: bolder;
+}
+
+.welcome-tag {
+	margin-top: 20px;
+	padding: 40px 0;
+	color: white;
+	font-size: 70px !important;
+}
+
+.Download-button {
+	margin: 5% 3% 5% 0;
+}
+
+.banner-area .content-padding {
+	padding: 180px 0px 180px;
+}
+
+.banner-content .subtitle {
+	color: #fff;
+	background: var(--dark-blue);
+	display: inline-block;
+	padding: 3px 8px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.banner-content .banner-title {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 900;
+	font-family: 'Merriweather', serif;
+	line-height: 50px;
+}
+
+.banner-content p {
+	margin: 20px 0px;
+	font-size: 18px;
+	color: var(--dark-blue);
+	font-family: 'Poppins', sans-serif;
+	line-height: 30px;
+}
+
+.banner-content .btn {
+	margin-right: 12px;
+	margin-top: 15px;
+}
+
+.banner-content .btn:hover {
+	color: white;
+	background-color: var(--dark-blue);
+	transform: rotate3d(1, 1, 0, 30deg);
+}
+
+.btn-white {
+	background-color: rgba(255, 255, 255, 0.95);
+	color: rgba(0, 0, 0, 0.85);
+	border-color: rgba(255, 255, 255, 0.12);
+}
+
+.carousel .btn {
+	display: inline-block;
+	padding: 15px 45px 15px 45px;
+	text-transform: uppercase;
+	border: 2px solid transparent;
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+.btn-circled {
+	border-radius: 40px;
+}
+
+.banner-2 {
+	background-color: var(--light-blue);
+}
+
+.flex {
+	display: flex;
+	margin: 10vh 0 10vh 0;
+}
+
+.carousel-control-prev {
+	left: 15vw;
+}
+
+.carousel-control-next {
+	right: 15vw;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	width: 50px;
+	height: 50px;
+}
+
+.text-light {
+	color: greenyellow !important;
+	font-size: 30px;
+}
+
+.features {
+	margin: 0;
+}
+
+#features {
+	/* padding: 3% 10%; */
+	/* background-color: var(--dark-blue); */
+	position: relative;
+	z-index: 1;
+	width: 100vw;
+	/* margin-top: 10vh; */
+	border-right: solid;
+	background: #2b5876;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4e4376, #2b5876);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.feature-div {
+	padding-top: 80px !important;
+	padding-bottom: 150px !important;
+}
+
+.feature-box {
+	text-align: center;
+	margin: 5px;
+	padding-top: 2% !important;
+	background-color: #adc5d9;
+	transition: transform 0.2s ease;
+	box-shadow: 2px 4px 6px 2px rgba(22, 22, 26, 0.18);
+	border-radius: 5px;
+}
+
+.feature-box a {
+	text-decoration: none;
+}
+
+.feature-box:hover {
+	transform: scale(1.2);
+	z-index: 5;
+}
+
+.feature-tag {
+	font-size: 50px !important;
+}
+
+.icon {
+	margin-bottom: 1rem;
+	color: #0a0a0a;
+}
+
+.icon:hover {
+	color: var(--dark-blue);
+}
+
+/* styling overlya button */
+
+#myBtn {
+	border: 1px solid white;
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+#myBtn:hover {
+	background-color: white;
+	color: black;
+}
+
+.features {
+	cursor: pointer;
+}
+
+/* .arrow:hover{
+	  color: blueviolet;
+  } */
+
+@media (orientation: portrait) {
+	.flex {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 900px) {
+	.navItem {
+		padding-left: 0 !important;
+	}
+	.welcome-tag {
+		font-size: 60px !important;
+	}
+}
+
+@media (max-width: 575px) {
+	.feature-box {
+		width: 80%;
+	}
+	.welcome-tag {
+		font-size: 40px !important;
+	}
+	/* .first{
+		height: 500px !important;
+	} */
+}
+
+@media (max-width: 472px) {
+	#nav .container {
+		display: flex;
+		justify-content: center;
+	}
+	#nav ul li {
+		display: flex;
+		justify-content: center;
+	}
+}

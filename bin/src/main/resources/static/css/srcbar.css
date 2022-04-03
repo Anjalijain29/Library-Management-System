@@ -1,0 +1,43 @@
+.sbar {
+	justify-content: space-between;
+	margin: auto;
+}
+
+.mr {
+	margin-right: 10px;
+	/* border: 1px solid;
+        border-radius: 6px; */
+}
+
+.sortbar {
+	/* width: auto;
+	border: 1px solid;
+	/* border-radius: 6px; */
+	background-color: rgba(0, 0, 0, 0.075);
+
+	width: auto;
+	color: #999;
+	/* background: linear-gradient(#fff, #eee); */
+	border-radius: 20px;
+	box-shadow: 0 0 3px rgb(0 0 0 / 50%);
+	transition: all 0.3s ease 0s;
+}
+
+.maincontainer {
+	width: 90%;
+	padding-left: 10%;
+}
+
+.srch {
+	border: solid 1px;
+	border-radius: 20px;
+	background: linear-gradient(#fff, #eee);
+	color: #999;
+	font-weight: 400;
+	height: 100%;
+}
+
+.srtrad {
+	flex-direction: column;
+	margin-right: 10px;
+}
